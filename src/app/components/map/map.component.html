@@ -1,0 +1,12 @@
+<agm-map
+    [zoom]="zoom" 
+    [latitude]="latitude" 
+    [longitude]="longitude"  
+    [fitBounds]="fitBound"  
+    [restriction]="defaultBounds" >
+    <agm-marker *ngFor="let cd of addresses" 
+        [latitude]="cd.lat" 
+        [longitude]="cd.lng" 
+        [agmFitBounds]=true>
+    </agm-marker>
+</agm-map> 

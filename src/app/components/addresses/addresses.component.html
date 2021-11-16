@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <h4>Saved Addresses</h4>
+    <div class="row">
+        <div class="col-xl-12 list">
+            <ul class="list-group" *ngIf="addresses">
+                <li *ngFor="let adr of addresses" class="list-group-item" aria-current="true">{{adr.name}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
