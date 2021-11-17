@@ -42,6 +42,7 @@ export class MapComponent implements OnInit, OnChanges {
     }
     if(data){
       this.addresses.push(data);
+      this.fitBound = true;
     } 
   }
 } 

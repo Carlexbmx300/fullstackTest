@@ -30,7 +30,7 @@ import { SharedModule } from "./components/shared/shared.module";
     }),
     AngularFireModule.initializeApp(environment.firebaseConfig)    
   ],
-  providers: [],
+  providers: [], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
